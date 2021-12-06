@@ -8,9 +8,10 @@ draft: false
 ---
 We further expand the datased by including the Complete Dialogue/Transcript. After formatting the data, once can look at how many lines the main characters have and how this varies from season to season. 
 
-![image description](/images/lines.png)
+
+
 {{< load-plotly >}}
-{{< plotly json="/01-episodes_per_season.json" height="450px" >}}
+{{< plotly json="/15-line_count_main_characters.json" height="450px" >}}
 \
 \
 \
@@ -23,10 +24,70 @@ We further expand the datased by including the Complete Dialogue/Transcript. Aft
 \
 \
 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+
 
 Michael, the main character and Regional Manager of the Scranton branch is the character with the most lines, which can also be seen from the graph above, even though he left the show in season 7 and did not participate in the last two seasons. Now, we will dive into the line count by season for each of the main characters, and see who became the main character after Michael has left The Office.
 
-![image description](/images/lines2.png)
+
+
+{{< load-plotly >}}
+{{< plotly json="/16-line_distribution_seasons.json" height="450px" >}}
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+
 
 For the first 7 seasons, Michael stayed the main character. The second place is shared by Dwight and Jim through the first 8 seasons. In season 8, Andy gets promoted to regional manager, to replace Michael, and hence, he is the character with most lines during season 8. However, in season 9, it is Dwight who gets promoted to regional manager, thus being the dominant character of the season. Consequently, a correlation can be seen between who is the regional manager od the Scranton brach and the character with most lines.
 
@@ -36,7 +97,58 @@ This is related to the analysis done with the IMDB ratings. Season8, after Micha
 ### **Share of dialogue throughout the series**
 Next, we will peek into the average number of lines for each main character said each episode per season.
 
-![image description](/images/shared_dialogue.png)
+
+{{< load-plotly >}}
+{{< plotly json="/17-characters_line_distribution_seasons.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 
 Michael, Dwigth, Jim and Pam are the ones with the highest contributions for all the seasons. However, After Michael left in season 7, Dwight, Jim, Pam and Andy contribute more. In fact, the dialog contibution is more spread and less focused on one single character (Michael), and other characters such as Kevin, Angela, Oscar or Erin have more lines in the last two seasons. On the contrary, Jan losses protagonism after season 5 when she losses the position as a manager. 
 
@@ -47,7 +159,8 @@ Darryl experiences an increase in his dialogue after he moves from the warehouse
 It was seen that on average, Michael is the top speaker for the first 7 seasons. However, it is time to investigate whether a relation between the top speaker in every episode of every season and the IMDb rating exists.
 
 
-![image description](/images/boxplot3.png)
+{{< load-plotly >}}
+{{< plotly json="/18-ratings_distribution_top_speakers.json" height="450px" >}}
 
 
 
@@ -62,9 +175,8 @@ A smarter choice would have been to replace Andry with Jim, which has almost the
 ### **Top speaker influence on the episode Viewership** 
 Let's repeat the previous analysis, but this time let's analyse the influence of the top speaker in episode views.
 
-
 {{< load-plotly >}}
-{{< plotly json="/viewership_distribution_top_speakers.json" height="450px" >}}
+{{< plotly json="/19-viewership_distribution_top_speakers.json" height="450px" >}}
 
 Once again, Michael and Jim have a positive influence in the views when they are the top speakers of the episodes. However, when Pam is the top speaker, the views are the lowest. This might be because generally she does not make many jokes and she is more calm, so people could see her as boring. 
 
@@ -80,7 +192,8 @@ On the other hand, Dwight has a very specific sense of humor. He is very sarcast
 
 First, let's look into the number of 'That's what she said jokes' made throughout all 9 seasons.
 
-![image description](/images/joke1.png)
+{{< load-plotly >}}
+{{< plotly json="/20-thats_what_she_said.json" height="450px" >}}
 
 The number of "That's what she said" jokes starts in season 2 and grows until season 4 after which the joke is not said as often. In season 7 when Michael leaves, no one says it. Then, in season 9, it is said again Once by Michael and once by Creed. The person who says the joke the most is Michael, who repeated the joke 23 times.
 
@@ -111,7 +224,7 @@ The number of times Andy calls Jim Tuna is 54.
 Kelly calls or talks about Ryan 12 times.
 
 
-#### **Number of Times Dwight says Assistant Regional Manager **
+#### **Number of Times Dwight says Assistant Regional Manager**
 
 ![Alt Text](/images/dwight.gif)
 
