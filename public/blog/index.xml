@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis on The Office</title>
+    <link>http://TheOffice.org/blog/</link>
+    <description>Recent content in Analysis on The Office</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Dec 2021 15:26:38 +0100</lastBuildDate><atom:link href="http://TheOffice.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IMDB Viewership Analysis</title>
+      <link>http://TheOffice.org/blog/post5/</link>
+      <pubDate>Sun, 05 Dec 2021 15:26:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post5/</guid>
+      <description>As mentioned in the previous posts, The Office dataset was expanded IMDB Episode Ratings which will be used all throughout this post.
+To help the reader understand the analysed data, a simple statistical analysis with the transcript dataframe will be performed.
+First, we take a glance at the number of episodes per season which will come in handy later on when performing the sentiment analysis and computeing the word-clods for every season.</description>
+    </item>
+    
+    <item>
+      <title>IMDB Episode Ratings Analysis</title>
+      <link>http://TheOffice.org/blog/post3/</link>
+      <pubDate>Sun, 05 Dec 2021 13:26:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post3/</guid>
+      <description>Top 10 highest rated episodes Next, the top 10 highest ranked episodes are obtained using the IMDBRating and TotalVotes columns from the IMDB data.
+It can be observed that the highest rated episodes, both rated at 9.8, are the Finale episode and the Goodbye, Michael in season 7 when the character leaves the show.
+Season Rating The analysis continues with identifying how the ratings changed from season to season. Which will be used later on when looking at the character sentiments and their transcripts.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle dataset: The Office (US) - WordClouds</title>
+      <link>http://TheOffice.org/blog/post7/</link>
+      <pubDate>Sat, 04 Dec 2021 23:16:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post7/</guid>
+      <description>Wordclouds based on transcripts Below figure is a representation of the most used words by the 25 main characters from the TV show throughout 9 seasons. Looking at the wordclouds not much can be said about every character, most of the characters use the words: hey, know, right, oh and yeah.It makes sense, since they are working in the same environment and tend to have conversations betwenn each other. Whenever they approach someone they say HEY or linking words like, oh, uh, okay.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle dataset: The Office (US) - Sentiment Analysis</title>
+      <link>http://TheOffice.org/blog/post4/</link>
+      <pubDate>Sat, 04 Dec 2021 21:26:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post4/</guid>
+      <description>Sentiment Analysis Througout the show each character is exposed to a multitude of feelings, some are in pain and some of them are full of excitement. However, from season to season their perception of awareness is changing and one can not be sure which character is the most positive and who does not share the same enjoyment. To see the variation on the character sentiments, we take a closer look at the transcripts for each character, we can observe which character is the happiest and who has the lowest sentiment score during each season.</description>
+    </item>
+    
+    <item>
+      <title>Kaggle dataset: The Office (US) - Basic Statistics </title>
+      <link>http://TheOffice.org/blog/post6/</link>
+      <pubDate>Fri, 03 Dec 2021 20:26:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post6/</guid>
+      <description>We further expand the datased by including the Complete Dialogue/Transcript. After formatting the data, once can look at how many lines the main characters have and how this varies from season to season.
+Michael, the main character and Regional Manager of the Scranton branch is the character with the most lines, which can also be seen from the graph above, even though he left the show in season 7 and did not participate in the last two seasons.</description>
+    </item>
+    
+    <item>
+      <title>Building the Network</title>
+      <link>http://TheOffice.org/blog/post1/</link>
+      <pubDate>Wed, 24 Nov 2021 18:26:38 +0100</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post1/</guid>
+      <description>This blog post focuses on providing the full analysis performed during the first part of the project.
+Gathering the Data To explore The Office, several datasets were used:
+ First, all characters that played in the office from the first season to the final one were extracted using The Offica Wiki (Dunderpedia) A description of each character is downloaded from Dunderpedia. The data is used to extract the sentiment of each character and will be later compared to the sentiment extracted from the episodes transcript.</description>
+    </item>
+    
+    <item>
+      <title>plot</title>
+      <link>http://TheOffice.org/blog/post8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://TheOffice.org/blog/post8/</guid>
+      <description>Plotly.d3.json(&#34;/viewership_distribution_top_speakers.json&#34;, function(err, fig) { Plotly.plot(&#39;\/viewership_distribution_top_speakers.json&#39;, fig.data, fig.layout, {responsive: true}); });</description>
+    </item>
+    
+  </channel>
+</rss>
