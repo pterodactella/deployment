@@ -793,15 +793,16 @@ header .navbar-default .navbar-nav li a:hover {
       padding-bottom: 20px;
       background-attachment: unset; } }
   .feature h2 {
-    margin: 10px;
-    padding-top: 40px;
+    color: white;
+    margin: 8px;
+    padding-top: 70px;
     padding-bottom: 40px; }
   .feature p {
     color: black;
     margin-bottom: 30px; }
   .feature .btn-view-works {
-    background: #6c6c6c;
-    color: #ffffff;
+    background: white;
+    color: #000000;
     padding: 10px 20px;
     margin-bottom: 30px; }
 

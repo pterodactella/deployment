@@ -27,17 +27,55 @@ After the data was downloaded, the network was generated and the giant connected
 
 #### The in- and out-degree distributions
 To plot the binned in and out degree distributions, the binning vector of both degrees was computed and used to create the graphs presented below:
-![The in- and out-degree binned distributions](/images/binned_distribution.png)
+
+{{< load-plotly >}}
+{{< plotly json="/01-degree_distributions.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+
+
 - The first observation is that the maximum out-degree in almost 4 times smaller than the maximum in-degree, which could have also be seen when finding the top connected characters for the in- and out-degrees, Michael and Andy.
 - In the in-degree plots it can be seen that the majority of nodes, nearly 100, have a degree of 0, and the degree ranges until 120. Hence, the distribution shows that a large number of characters point to a smaller number of characters. While in the out-degree plots, the degree distribution changes slower than the in-degree, and the degrees are more concentrated between 0 and 10, in comparison to the in-degree.
 - The in-degree distribution is different from the out-degree distribution because of the network's nature. In this network, the link is defined between two characters, A and B, if there exists a hyperlink in character's A page that links to B's page. Popular characters will therefore be linked by a lot of other characters, which can account for higher in-degrees. Therefore, for less popular characters, will have links pointing to other characters, but very little links pointing to them, which can cause the large amount in-degrees close to 0.
 - The out-degree might be limited by the page length and the fact that every character includes a low number of hyperlinks on its page.
 - After calculating the best minimal values for the power law fit, the exponent of the in-degree sistribution was found to be equal to 1.9982 and the exponent of the out-degree distribution was found to be equal to 2.6148
 
-###### Comparison between the degree distribution of the undirected graph to a random network with the same number of nodes and probability of connection p.
-![The Binned degree sistribution](/images/graph_partA.png)
+### Comparison between the degree distribution of the undirected graph to a random network with the same number of nodes and probability of connection p.
+
+
+{{< load-plotly >}}
+{{< plotly json="/02-degree_distributions_random_network.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+
+
+
+
 #### Visualization of the network
-![The Office Network](/images/network1.png)
+Bellow you can see how the network looks:
+
+![image description](/network.png)
 
 
 

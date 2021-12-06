@@ -9,6 +9,20 @@ draft: false
 We further expand the datased by including the Complete Dialogue/Transcript. After formatting the data, once can look at how many lines the main characters have and how this varies from season to season. 
 
 ![image description](/images/lines.png)
+{{< load-plotly >}}
+{{< plotly json="/01-episodes_per_season.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 
 Michael, the main character and Regional Manager of the Scranton branch is the character with the most lines, which can also be seen from the graph above, even though he left the show in season 7 and did not participate in the last two seasons. Now, we will dive into the line count by season for each of the main characters, and see who became the main character after Michael has left The Office.
 
@@ -35,6 +49,8 @@ It was seen that on average, Michael is the top speaker for the first 7 seasons.
 
 ![image description](/images/boxplot3.png)
 
+
+
 For all episodes in the show, 7 main speakers were identified. 
 
 As we previously suspected, when Michael is the top speaker in an episode, that episode tends to obtain higher ratings. 
@@ -46,7 +62,9 @@ A smarter choice would have been to replace Andry with Jim, which has almost the
 ### **Top speaker influence on the episode Viewership** 
 Let's repeat the previous analysis, but this time let's analyse the influence of the top speaker in episode views.
 
-![image description](/images/boxplot4.png)
+
+{{< load-plotly >}}
+{{< plotly json="/viewership_distribution_top_speakers.json" height="450px" >}}
 
 Once again, Michael and Jim have a positive influence in the views when they are the top speakers of the episodes. However, when Pam is the top speaker, the views are the lowest. This might be because generally she does not make many jokes and she is more calm, so people could see her as boring. 
 

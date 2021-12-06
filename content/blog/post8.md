@@ -7,7 +7,7 @@ featured_image: "/images/group.jpg"
 draft: false
 ---
 {{< load-plotly >}}
-{{< plotly json="/viewership_distribution_top_speakers.json" height="450px" >}}
+{{< plotly json="/13-directors_average_episode_ratings.json" height="450px" >}}
 
 
 

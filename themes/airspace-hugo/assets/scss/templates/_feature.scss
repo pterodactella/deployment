@@ -16,22 +16,23 @@
   }
 
   h2 {
-    margin: 10px;
-    padding-top: 40px;
+    color: darken( $white, 0);
+    margin: 8px;
+    padding-top: 70px;
     padding-bottom: 40px;
     
 
   }
 
   p {
-    color: darken( $white, 100);
+    color: darken( $black, 100);
     margin-bottom: 30px;
   
   }
 
   .btn-view-works {
-    background: lighten( $black, 42.35 );
-    color: $white;
+    background: lighten( $white, 0 );
+    color: $black;
     padding: 10px 20px;
     margin-bottom: 30px;
   }

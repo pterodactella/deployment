@@ -42,12 +42,11 @@ portfolio:
   enable: true
   bg_image: "images/office.png"
   title: "Want to see more?"
-  content: "Click the button below to find all the secrets behind **The Office** tv show
-  "
+  content: ""
   button:
     enable: true
-    label: "View Analysis"
-    link: "blog"
+    label: "View Data"
+    link: "https://github.com/saralopez7/theOffice-socialGraphs-analysis/tree/master/data"
 
 
 ############################# Service ############################
@@ -64,7 +63,7 @@ cta:
   content: "See the full code and data"
   button:
     enable: true
-    label: "Code"
+    label: "Notebook"
     link: "https://wetransfer.com/downloads/45a28a7ad7f76459d4a9993e9c83198220211206122833/cbe07e"
 
 ############################# Funfacts ###############################
