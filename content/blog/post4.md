@@ -17,28 +17,81 @@ forward to a relationship with Pam and Meredith not having yet an alcohol proble
 at the bottom of the list there is Darryl that is constantly annoyed by Michael, Angela that only cares about her cats and Stanely being the office grump.
 Kelly is in a constant change of mood and when in season two Ryan appears she tends to be more happy.
 
-![image info](/images/firsttwo.png)
+
+{{< load-plotly >}}
+{{< plotly json="/06-characters_polarities_seasons.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+
+
 
 Season three, four and five keeps Stanley's at the bottom of the list because he does not like to find himself in constant meetings and only loves Pretzel Days.
 Moreover, we can observe Michael being constantly in top three, meaning that whenever there is a problematic situation in the office he always likes to 
 take things positively and develops a multitude of characters to break the created tension in the office. From being neutral Dwight drops a few positions back
 due to the fact of taking things too serious and being prancked by Jim.
 
-![image info](/images/345.png)
 
 Season five and six gives Toby a higher sentiment score due to the fact that he is about to leave for Costa Rica and also was invited to participate in the
 Scranton Strangler court case as a jury. Because Dunder Mifflin was sold to another company, new characters start to appear like Gabe, Erin, Pete and Clark
 that have a rather positive score due to the fact that they met their new colleagues and tend to get along with everyone. At the bottom of the list Meredith,
 Stanley, Darryl and Angela are not pleased with the new changes. 
 
-![image info](/images/56.PNG)
 
 Season seven is when Michael leaves Dunder Mifflin, this being the main reason why he did not make it into top 5. On the other hand Karen has the biggest
 happiness score due to the fact of being pregnant. New characters are introduced such as Robert California, whit a big sentiment score because of his role as
 a CEO of Dunder Mifflin. At the bottom of the list there are the usual names always grumpy and self centered(Angela) and Nelie who has filmed in only one series
 of that season but still making a bad impression from the begining. 
 
-![image info](/images/7.PNG)
+
 
 After Michael leaves Andy is appointed manager and his dream to be promoted is fulfilled, thus, receiving a high sentiment score. Nellie from being last made it into top 
 ten due to the fact of being promoted to a higher position and at the characters with the lowest sentiment score being the usual grumpy faces of Angela, 
@@ -46,7 +99,7 @@ Stanley, Toby and Meredith.
 Season nine has somewhat two biast sentiment scores because both Roy and Michael appear only in one of the series, and in the middle there is Dwight. One can
 say that was the most Dwight has achieved during the sitcom, thus, he and Angela have a higher sentiment score than before.
 
-![image info](/images/89.PNG)
+
 
 
 ### **LabMT method**
@@ -62,13 +115,18 @@ because of their relationship development throughtout the seasons, but did not m
 ![image info](/images/sentiment_score.png)
 
 
+
+
 #### **Histogram of all characters associated transcripts-sentiments using the LabMT method**
 
 From the below histogram, we can see the variation on the character sentiments. It represents the number of characters that share the same sentiment score according to the LabMT method. The sentiment score does not fluctuate much which means that the characters do not have a significant change of sentiment, but rather all of them share more or less the same temperament.
 
 
 
-![image info](/images/histogramLABMT.png)
+
+
+{{< load-plotly >}}
+{{< plotly json="/01-labMT_sentiments.json" height="450px" >}}
 
 
 
@@ -89,12 +147,22 @@ suffering from his divorce while Meredith treated her sadness with alcohol.
 
 #### **Characters based on sentiment score:**
 
-![image info](/images/sentiment_score1.png)
+
+{{< load-plotly >}}
+{{< plotly json="/05-Vader-characters.json" height="450px" >}}
+
+
 
 
 #### **Histogram of all characters associated transcripts-sentiments using the Vader method**
 
 As the previous histogram shows, there is no big decay between the polarity scores of the characters. Most of them are positive and only a few people have some negative thougths that can be interpreted as neutral. It means that the show is rather positive to watch and would only give you good vibes. 
 
+{{< load-plotly >}}
+{{< plotly json="/03-vader_sentiments.json" height="450px" >}}
 
-![image info](/images/polarity.png)
+
+
+{{< load-plotly >}}
+{{< plotly json="/04-sentiment_distribution_vader.json" height="450px" >}}
+
