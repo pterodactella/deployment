@@ -1842,9 +1842,13 @@ header .navbar-default .navbar-nav li a:hover {
       text-align: left;
       color: #737373; }
     .post .post-content .btn-main, .post .post-content .btn-transparent, .post .post-content .btn-small {
-      padding: 20px 50px;
+      content: 'Read More';
+      padding: 10px 20px;
       margin: 15px 0;
       font-size: 12px; }
+    .post .post-content .btn-main:before, .post .post-content .btn-transparent:before, .post .post-content .btn-small:before {
+      content: "Read More";
+      visibility: visible; }
 
 .post-pagination {
   margin: 0px; }

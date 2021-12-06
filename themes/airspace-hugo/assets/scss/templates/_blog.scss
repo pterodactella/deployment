@@ -96,14 +96,20 @@
       text-align: left;
       color: darken( $light, 50.98);
     }
-
+    
     .btn-main {
-      padding: 20px 50px;
+      content:'Read More'; 
+      padding: 10px 20px;
       margin: 15px 0;
       font-size: 12px;
       
       
     }
+    .btn-main:before {
+      content: "Read More";
+      visibility: visible;
+    }
+
   }
 }
 
