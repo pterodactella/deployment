@@ -105,7 +105,7 @@ funfacts:
   testimonial_slider:
   # testimonial item loop
   - name: "Michael Scott"
-    image: "images/testimonial_m.jpg"
+    image: "images/michael.png"
     designation: "Branch Manager"
     content: "And I knew exactly what to do. But in a much more real sense, I had no idea what to do."
 
