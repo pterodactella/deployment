@@ -214,4 +214,4 @@ Let's repeat the previous analysis, but this time let's analyse the influence of
 
 * On the other hand, **Dwight** has a very specific sense of humor. He is very sarcastic, and not many viewers might understand and/or like it. 
 
-Next we are going to analyse the most iconic jokes and characteristics of each character. Follow **[this post](./post11.md)** for some fun insights.
+Next we are going to analyse the most iconic jokes and characteristics of each character. Follow [**this post**](https://gallant-ride-ed7fdb.netlify.app/blog/post11/) for some fun insights.
