@@ -148,7 +148,7 @@ Similarly to the above analysis, the episodes have been directed by different pe
 
 The first graph below, displays the directors and the number of episodes they directed. The second graph shows the average rating for the episodes directed for each of the directors.
 
-![image info](/images/directors.png)
+
 
 {{< load-plotly >}}
 {{< plotly json="/12-directors_episodes.json" height="450px" >}}

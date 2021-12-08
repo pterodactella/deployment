@@ -16,7 +16,7 @@
             {{ with .price }}<strong class="value">{{ . }}</strong>{{ end }}
             {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           </div>
-          <ul>
+          <ul style="list-style-type:disc">
             {{ range .services }}
             <li>{{ . | markdownify }}</li>
             {{ end }}

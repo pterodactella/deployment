@@ -16,20 +16,18 @@ about:
   enable: true
   title: "To explore The Office, we use several datasets:"
   content: " 
-    - We first extract all the characters that played in the Office from season 1 to season 9 (final). This is extracted using **Dunderpedia: The Office Wiki**: https://theoffice.fandom.com/
+    - We first extract all the characters that played in the Office from season 1 to season 9 (final). This is extracted using [*Dunderpedia: The Office Wiki*](https://theoffice.fandom.com/)
     
-    - A description of each character is downloaded from the same source: **Dunderpedia: The Office Wiki**. This data is used to extract the sentiment of each character and will later be compared to the sentiment extracted from the episodes transcripts. We would like to validate that the character description is based on the character developemnt over all seasons. 
-    
-    
-    - We then want to analyse episodes ratings The Office and how they change overtime. We use the **IMDb**  to extract: episode title, IMDb rating, total votes ad air date. The source is: https://www.imdb.com/title/tt0386676/episodes/_ajax
+    - A description of each character is downloaded from the same source: [*Dunderpedia: The Office Wiki*](https://theoffice.fandom.com/). This data is used to extract the sentiment of each character and will later be compared to the sentiment extracted from the episodes transcripts. We would like to validate that the character description is based on the character developemnt over all seasons. 
     
     
-    - From Kaggle we download the guest starts, directors adn writers. We use this data to analyse the impact of guest starts, directors and writers in the ratings. 
-    https://www.kaggle.com/nehaprabhavalkar/the-office-dataset
+    - We then want to analyse episodes ratings The Office and how they change overtime. We use the [*IMDB*](https://www.imdb.com/title/tt0386676/episodes/_ajax)  to extract: episode title, [*IMDB*](https://www.imdb.com/title/tt0386676/episodes/_ajax) rating, total votes ad air date.
     
     
-    - Next, to further analyse the episodes raitings, we want to get information about the episode itself, such as the characters that played in it, how many lines they had in every episode and so on. This is collected from a **Kaggle dataset: The Office (US) - Complete Dialogue/Transcript**
-    https://www.kaggle.com/nasirkhalid24/the-office-us-complete-dialoguetranscript/version/1?select=The-Office-Lines.csv
+    - From [*Kaggle data*](https://www.kaggle.com/andreal314159/the-office-analysis-for-datacamp/data) we download the guest starts, directors adn writers. We use this data to analyse the impact of guest starts, directors and writers in the ratings. 
+    
+    
+    - Next, to further analyse the episodes raitings, we want to get information about the episode itself, such as the characters that played in it, how many lines they had in every episode and so on. This is collected from a [*Kaggle dataset*](https://www.kaggle.com/nasirkhalid24/the-office-us-complete-dialoguetranscript/version/1?select=The-Office-Lines.csv): *The Office (US) - Complete Dialogue/Transcript*
   "
   image: "images/michael_explain.gif"
   services:
