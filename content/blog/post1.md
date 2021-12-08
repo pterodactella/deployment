@@ -1,35 +1,69 @@
 ---
 layout: post
-title: "Building the Network"
-date: 2021-11-24T18:26:38+01:00
+title: "Dunderpedia Basic Stats"
+date: 2021-12-07T18:26:38+01:00
 description: "A little backgroud on what was already discovered during part A"
 featured_image: "/images/group.jpg"
 draft: false
 ---
 This blog post focuses on providing the full analysis performed during the first part of the project.
-### Gathering the Data
-To explore The Office, several datasets were used:
-- First, all characters that played in the office from the first season to the final one were extracted using [The Offica Wiki (Dunderpedia)](https://theoffice.fandom.com/)
-- A description of each character is downloaded from [Dunderpedia](https://theoffice.fandom.com/). The data is used to extract the sentiment of each character and will be later compared to the sentiment extracted from the episodes transcript. We would like to validate that the character description is based on the character development over all seasons.
-- Later on, we want to analyse the episode ratings and their change over time. For this, the [IMDB](https://www.imdb.com/title/tt0386676/episodes/_ajax) is used to extract the episode title, the rating, total votes and air date.
-- The guests, directors and writers are extracting using [Kaggle data](https://www.kaggle.com/andreal314159/the-office-analysis-for-datacamp/data). This data wil be used to analyse the impact of guests, directors and writers on the ratings.
-- For a more in-depth analysis of the episode ratings, a new [Kaggle dataset](https://www.kaggle.com/nasirkhalid24/the-office-us-complete-dialoguetranscript/version/1?select=The-Office-Lines.csv) is used to colect the Complete Dialogue Transcript.
+
+We start our Dunderpedia analysis by generating The Office network, which includes all the characters in the Office extracted from the Dunderpedia. 
+The nodes in the network will be all the characters, and we will place an edge between nodes **A** and **B** if the Dunderpedia wiki page of node **A** links to the Dunderpedia Wiki page of node **B**. 
 
 ### Basic Statistics
-After the data was downloaded, the network was generated and the giant connected component was extracted. Using the NetworkX DiGraph the networks and its properties were stored. During the preliminary analysis performed, the following was descovered:
-- The total number of unique characters was found to be 298 (the dataset does not contain any duplicates)
-- The total number of nodes is 255 with 17 isolated nodes
-- The total number of isolated nodes in graph after removal is equal to 0
-- The total number of links was found to be equal with 1196
-- The top connected character for the in-degrees is Michael Scott with a degree of 108
-- The top connected character for the out-degrees is Andy Bernard with a degree of 33
-- The memory usage for all the data is equal to 6.75 MB
-
-#### The in- and out-degree distributions
-To plot the binned in and out degree distributions, the binning vector of both degrees was computed and used to create the graphs presented below:
+We would like to get some insights into our network. For this, we perform simple network statistics and analysis:
 
 {{< load-plotly >}}
-{{< plotly json="/01-degree_distributions.json" height="450px" >}}
+{{< plotly json="/dunderpedia/04-nodes.json" height="250px"  >}}
+
+{{< load-plotly >}}
+{{< plotly json="/dunderpedia/05-links.json" height="250px"  >}}
+
+{{< load-plotly >}}
+{{< plotly json="/dunderpedia/06-top_in_degrees.json" height="250px"  >}}
+
+The top connected character in The Office for the in-degrees is **Michael Scott**, with a 108 in-degree. Michael is the main character of The Office, and Regional Manager of the Scranton branch from season 1 to 7. Hence it makes sense that a lot of characters point to him as he is the main character and has relations to most of the other chraracters. 
+
+{{< load-plotly >}}
+{{< plotly json="/dunderpedia/07-top_out_degrees.json" height="250px"  >}}
+
+The top connected character in The Office for the out-degrees is **Andy Bernard**, with a 33 out-degree. In the series, Andy Bernard tries to please everyone, so it makes sense that he is the one pointing to the most characters.
+
+
+### Top 5 connected components
+{{< load-plotly >}}
+{{< plotly json="/dunderpedia/01-top_in_out_degree.json" height="850px"  >}}
+\
+\
+\
+\
+\
+\
+
+The most connected characters as one can see from the in-degree graph are the top 5 main characters, according to our biased opinion as viewers. However, a verification will be done during this analysis. During the series almost everything evolves around them, is it a prank on Dwight from Jim, is it a relationship problem or shared happiness between Jim and Pam, or Andy who tries to be friends with everyone, and least but not last, Michael Scott, that keeps the group together and likes to pretend as a father to all of them.
+
+Regarding the top connected characters for the out-degree, Michael is the regional manager and has connections not only with his office, but other branches as well as with the corporate. So it makes sense that he is the person that everyone links to and also him, being the one that links to other people. As well as Andy who's desire is to become the next branch manager. All the main characters are repeated besides Jim, who is not there for the job but for Pam. He does not like to gossip much or try to please everyone, his concerns are only about Pam.
+
+#### The in- and out-degree distributions
+We look further in the in and out degrees by computing the bin distributions:
+
+{{< load-plotly >}}
+{{< plotly json="/dunderpedia/02-degree_distributions.json" height="450px" >}}
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
 \
 \
 \
@@ -38,19 +72,19 @@ To plot the binned in and out degree distributions, the binning vector of both d
 \
 \
 
+- The first thing that we can observe is that maximum out-degree is more than 3 times smaller than maximum in-degree, which could have also be seen in the previous question, when we examined the top nodes based on in- and out-degree, Michael and Andy. 
 
-- The first observation is that the maximum out-degree in almost 4 times smaller than the maximum in-degree, which could have also be seen when finding the top connected characters for the in- and out-degrees, Michael and Andy.
-- In the in-degree plots it can be seen that the majority of nodes, nearly 100, have a degree of 0, and the degree ranges until 120. Hence, the distribution shows that a large number of characters point to a smaller number of characters. While in the out-degree plots, the degree distribution changes slower than the in-degree, and the degrees are more concentrated between 0 and 10, in comparison to the in-degree.
-- The in-degree distribution is different from the out-degree distribution because of the network's nature. In this network, the link is defined between two characters, A and B, if there exists a hyperlink in character's A page that links to B's page. Popular characters will therefore be linked by a lot of other characters, which can account for higher in-degrees. Therefore, for less popular characters, will have links pointing to other characters, but very little links pointing to them, which can cause the large amount in-degrees close to 0.
-- The out-degree might be limited by the page length and the fact that every character includes a low number of hyperlinks on its page.
-- After calculating the best minimal values for the power law fit, the exponent of the in-degree sistribution was found to be equal to 1.9982 and the exponent of the out-degree distribution was found to be equal to 2.6148
+- In the in-degree plots it can be seen that there majority of nodes, nearly 100, have a degree of 0, and the degree ranges until 108. Hence, the distribution shows that a large number of characters point to a small number of characters. While in the out-degree plots, the degree distribution changes slower than the in-degree, and the degrees are more concentrated between 0 and 10, in comparison to the in-degre.
+
+- Because of the nature of the network. In this network, the link is defined between two characters, **A** and **B**, if there exists a hyperlink in character's **A** page that link to **B**'s page. Popular characters will therefore be linked by a lot of other characters, which can accounts for highers in-degrees. Therefore, for less popular characters, will have links pointing to other characters, but very little links pointing to them, which can cause the large amout in-degrees close to 0.
+
+- The out-degree might be limited by the page length and the fact that every characters includes a low number of hyperlinks in its page.
 
 ### Comparison between the degree distribution of the undirected graph to a random network with the same number of nodes and probability of connection p.
 
 
 {{< load-plotly >}}
-{{< plotly json="/02-degree_distributions_random_network.json" height="450px" >}}
-\
+{{< plotly json="/dunderpedia/03-degree_distributions_random_network.json" height="450px" >}}
 \
 \
 \
@@ -69,13 +103,14 @@ To plot the binned in and out degree distributions, the binning vector of both d
 \
 
 
+From the above plot it can be see that the degree distribution of the random network is similar to a normal distribution, with the higher degrees in the middle values (from 5 to 9), with the mean in 7, the mean value of the degree. On the other hand, the Undirected graph there is only one high peak on the degree 0, and the degree count starts to decrease after. 
 
 
 
 #### Visualization of the network
 Bellow you can see how the network looks:
 
-![image description](/network.png)
+![image description](/images/network.png)
 
 
 

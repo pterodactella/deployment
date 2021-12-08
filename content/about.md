@@ -16,7 +16,7 @@ about:
   button:
     enable : true
     label : "See Jupyter Notebook"
-    link : "#"
+    link : "https://github.com/saralopez7/theOffice-socialGraphs-analysis"
 
   funfacts:
   # funfacts loop
@@ -27,12 +27,12 @@ about:
   # funfacts loop
   - icon : "fas fa-fire-alt" #https://fontawesome.com/v5.15/icons
     name : "Episodes"
-    count : "201"
+    count : "188"
 
   # funfacts loop
   - icon : "fas fa-glasses" #https://fontawesome.com/v5.15/icons
     name : "Lines"
-    count : "58000"
+    count : "54815"
 
   # funfacts loop
   - icon : "fas fa-trophy" #https://fontawesome.com/v5.15/icons

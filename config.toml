@@ -22,7 +22,7 @@ url = "goal/"
 weight = 2
 
 [[menu.main]]
-name = "Blog"
+name = "Analysis"
 url = "blog/"
 weight = 4
 
