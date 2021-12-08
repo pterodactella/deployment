@@ -16,16 +16,16 @@ about:
   button:
     enable : true
     label : "See Jupyter Notebook"
-    link : "https://github.com/saralopez7/theOffice-socialGraphs-analysis"
+    link : "https://nbviewer.org/github/saralopez7/theOffice-socialGraphs-analysis/blob/master/The%20Office%20Analysis.ipynb"
 
   funfacts:
   # funfacts loop
-  - icon : "fas fa-flask" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-ticket-alt" #https://fontawesome.com/v5.15/icons
     name : "Seasons"
     count : "9"
 
   # funfacts loop
-  - icon : "fas fa-fire-alt" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-tv" #https://fontawesome.com/v5.15/icons
     name : "Episodes"
     count : "188"
 
@@ -40,7 +40,7 @@ about:
     count : "30"
 
   # funfacts loop
-  - icon : "fas fa-glass-cheers" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-users" #https://fontawesome.com/v5.15/icons
     name : "Billion Views"
     count : "45"
 

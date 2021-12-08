@@ -15,32 +15,32 @@ about:
 
   funfacts:
   # funfacts loop
-  - icon : "fas fa-flask" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-star-half-alt" #https://fontawesome.com/v5.15/icons
     name : "Average IMDb Rating"
     count : "8.2"
 
   # funfacts loop
-  - icon : "fas fa-fire-alt" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-users" #https://fontawesome.com/v5.15/icons
     name : "Average Viewrship"
     count : "7250000"
 
   # funfacts loop
-  - icon : "fas fa-glasses" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-smile-beam" #https://fontawesome.com/v5.15/icons
     name : "The most watched episode"
     count : "2291000"
 
   # funfacts loop
-  - icon : "fas fa-certificate" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-sad-cry" #https://fontawesome.com/v5.15/icons
     name : "Least watched episode"
     count : "3250000"
 
   # funfacts loop
-  - icon : "fas fa-trophy" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-chart-line" #https://fontawesome.com/v5.15/icons
     name : "Top IMDb Rated Episode"
     count : "9.8"
 
   # funfacts loop
-  - icon : "fas fa-glass-cheers" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-heart-broken" #https://fontawesome.com/v5.15/icons
     name : "Least IMDb Rated Episode"
     count : "6.4"
 

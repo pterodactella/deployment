@@ -73,7 +73,7 @@ cta:
   content: "See the full code and data"
   button:
     enable: true
-    label: "Notebook"
+    label: "Repository"
     link: "https://github.com/saralopez7/theOffice-socialGraphs-analysis"
 
 ############################# Funfacts ###############################
@@ -90,7 +90,7 @@ funfacts:
   # funfacts item loop
   - icon: "fas fa-glasses" #https://fontawesome.com/v5.15/icons
     name: "Article Written"
-    count: "45"
+    count: "12"
 
   # funfacts item loop
   - icon: "fas fa-keyboard" #https://fontawesome.com/v5.15/icons

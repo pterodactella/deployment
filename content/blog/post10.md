@@ -15,12 +15,12 @@ about:
 
   funfacts:
   # funfacts loop
-  - icon : "fas fa-flask" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-align-left" #https://fontawesome.com/v5.15/icons
     name : "Total Lines"
     count : "54815"
 
   # funfacts loop
-  - icon : "fas fa-fire-alt" #https://fontawesome.com/v5.15/icons
+  - icon : "fas fa-film" #https://fontawesome.com/v5.15/icons
     name : "Average Scenes per Episode"
     count : "4194"
 
